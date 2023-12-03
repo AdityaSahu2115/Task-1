@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TASK-1</title>
+    <style>
+      body {
+        background-color: blue;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        background-color: aqua;
+        height: 430px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 15px;
+      }
+      h1,
+      h3 {
+        color: rgb(240, 114, 200);
+        justify-content: center;
+      }
+
+      p {
+        color: blue;
+      }
+      button {
+        background-color: rgb(245, 152, 167);
+        margin-left: 30px;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+      }
+      @media (max-width:500px) {
+
+        .container {
+        background-color: aqua;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 15px;
+      }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Big Storm</h1>
+      <br />
+      <h3>Educational Website</h3>
+      <br />
+
+      <p>Sign In and Shine More</p>
+      <br />
+
+      <div>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+        /><br /><br />
+
+        <label for="Email ID">Email:</label>
+        <input
+          type="Email"
+          id="Email ID"
+          name="Email ID"
+          placeholder="Enter your Email"
+        /><br /><br />
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter a valid password"
+        /><br /><br />
+
+        <!-- <input type="button" value="Sign in to continue"> -->
+        <button onclick="signIn()" >Sign in to continue</button>
+      </div>
+      <div id="demo"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
